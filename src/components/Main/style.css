@@ -1,0 +1,88 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 43px;
+}
+form p {
+  font-weight: normal;
+  font-size: 18px;
+  color: #333333;
+}
+input {
+  margin-right: 15px;
+}
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #ababab;
+  margin-right: 15px;
+}
+.custom-checkbox:checked + label::before {
+  border-color: black;
+  background-image: url(../../assets/img/Ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+input[type="text"] {
+  width: 680px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 10px;
+  border: 2px solid #333333;
+  padding-left: 15px;
+  font-size: 16px;
+  color: #ababab;
+}
+button {
+  width: 152px;
+  height: 42px;
+  border-radius: 10px;
+  background: #7291ff;
+  border: none;
+  margin-bottom: 40px;
+}
+button:focus {
+  outline: none;
+}
+.categories {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  height: 80px;
+}
+.categories li {
+  height: 28px;
+  line-height: 28px;
+  cursor: pointer;
+  border: 2px solid #f8f8f8;
+  border-radius: 6px;
+  text-align: center;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 0 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ababab;
+}
+
+.active {
+  background-color: #7291ff;
+  color: blue;
+  border: blue;
+}

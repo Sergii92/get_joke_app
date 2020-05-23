@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+html,
+body {
+  min-height: 900px;
+}
+.container-fluid {
+  display: flex;
+  padding-right: 0;
+  height: 100%;
+}
+.flex {
+  display: flex;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #333333;
+}
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 44px;
+  color: #333333;
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    display: block;
+    position: relative;
+  }
+  .content {
+    width: 100%;
+  }
+  aside {
+    padding-bottom: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-height: 20px;
+    overflow: hidden;
+  }
+  .flex {
+    justify-content: flex-end;
+  }
+  .wrapper {
+    padding-right: 50px;
+    height: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .container-fluid {
+    padding-left: 140px;
+    height: 100%;
+    width: 1440px;
+    min-height: 900px;
+    display: flex;
+  }
+  .content {
+    width: 67%;
+  }
+  aside {
+    min-width: 480px;
+    width: 33%;
+    height: 100%;
+    background-color: #f8f8f8;
+    height: 100%;
+    padding-bottom: 50px;
+    min-height: 100vh;
+  }
+  .flex {
+    justify-content: start;
+  }
+
+  .wrapper {
+    padding: 40px;
+    height: 100%;
+  }
+  .wrapper span {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ababab;
+  }
+}
